@@ -1,0 +1,227 @@
+body{
+    background-color: #390053;
+}
+
+.contadores{
+    height: 5vh;
+    margin-top: 13vh;
+    margin-left: -54vw;
+    padding: 13%;
+}
+
+/* Inicio del contador X */
+.contadorJ1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+    top: -33vh;
+    left: -10vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contadorJ1 {
+    position: relative;
+    background-color: rgb(249, 246, 156);
+    border: 4px solid #fff;
+    height: 100%;
+    border-color: #ffee00;
+    box-shadow:
+        0 0 5px #ffee00,
+        0 0 10px #ffee00,
+        0 0 20px #ffee00,
+        0 0 40px #ffee00,
+        0 0 80px #ffee00;
+}
+
+.contadorJ1::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1;
+    background: linear-gradient(135deg, #d2bf0d, #ffee00);
+    border-radius: 10px;
+    opacity: 0.8;
+    animation: neon-animation 1s ease-in-out infinite alternate;
+}
+
+/* Fin del contador X */
+
+/* Inicio del contador O */
+.contadorJ2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    top: -39vh;
+    left: 6vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contadorJ2 {
+    position: relative;
+    background-color: rgb(249, 246, 156);
+    border: 4px solid #fff;
+    height: 100%;
+    border-color: #ffee00;
+    box-shadow:
+        0 0 5px #ffee00,
+        0 0 10px #ffee00,
+        0 0 20px #ffee00,
+        0 0 40px #ffee00,
+        0 0 80px #ffee00;
+}
+
+.contadorJ2::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1;
+    background: linear-gradient(135deg, #d2bf0d, #ffee00);
+    border-radius: 10px;
+    opacity: 0.8;
+    animation: neon-animation 1s ease-in-out infinite alternate;
+}
+
+/* Fin del contador O */
+/*Inicio del boton*/
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    top: 15vh;
+    left: -29vw;
+    padding: 20px;
+    padding-left: 14.3vw;
+    padding-right: 14.3vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    position: relative;
+    background-color: rgb(255, 231, 98);
+    border: 4px solid #fff;
+    height: 100%;
+    border-color: #ffb300;
+    box-shadow:
+        0 0 5px #ffb300,
+        0 0 10px #ffb300,
+        0 0 20px #ffb300,
+        0 0 40px #ffb300,
+        0 0 80px #ffb300;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1;
+    background: linear-gradient(135deg, #ba0303, #ffb300);
+    border-radius: 10px;
+    opacity: 0.8;
+    animation: neon-animation 1s ease-in-out infinite alternate;
+}
+/*Fin del boton*/
+
+.container{
+    height: 10px;
+    width: 10px;
+    display: grid;
+    margin-left: 43vw;
+    margin-top: -70vh;
+    padding: 10px;
+    grid-template-columns: repeat(15, auto);
+}
+
+.card{
+    padding: 3vh;
+    border: 1px solid grey;
+}
+
+body{
+    margin: 0;
+}
+
+/* CREAMOS LAS CLASES DE LAS POSICIONES ONJETIVO, J1 y J2 */
+.objetivo{
+    background-color: rgb(153, 255, 1);
+}
+
+.j1{
+    background-color: rgb(255, 230, 0);
+}
+
+.j2{
+    background-color: rgb(255, 0, 0);
+}
+
+.control{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 27vh;
+    margin-left: 8vw;
+    margin-right: 65vw;
+    padding-left: 2vw;
+    padding-bottom: -5vw;
+    gap:0px;
+    background: linear-gradient(0deg, rgb(188, 0, 240), rgb(225, 0, 255));
+}
+
+.control p{
+    margin: 3vw;
+    margin-bottom: 2vh;
+    padding-bottom: -8vh;
+
+}
+
+.player1{
+    background-color: rgb(255, 0, 0);
+    padding-bottom: -30px;
+    margin: 5px;
+}
+.player2{
+    background-color: rgb(255, 230, 0);
+    padding-bottom: -30px;
+    margin: 5px;
+}
+
+/* Inicio transiciones del neon */
+@keyframes neon-animation {
+    from {
+        opacity: 0.8;
+        box-shadow:
+            0 0 5px #ffee00,
+            0 0 10px #ffee00,
+            0 0 20px #ffee00,
+            0 0 40px #ffee00,
+            0 0 80px #ffee00;
+    }
+
+    to {
+        opacity: 0.2;
+        box-shadow:
+            0 0 5px #ffee00,
+            0 0 10px #ffee00,
+            0 0 20px #ffee00,
+            0 0 30px #ffee00,
+            0 0 40px #ffee00,
+            0 0 70px #ffee00,
+            0 0 80px #ffee00;
+    }
+}
+/*Fin transiciones del neon*/
